@@ -1,0 +1,48 @@
+@use 'variables';
+@use 'header';
+@use 'about_the_movie';
+@use 'characters';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: variables.$bgColor;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  color: #fff;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.text {
+  font-size: 18px;
+  color: variables.$textColor;
+}
+
+.btn-primary {
+  background-color: variables.$btnColor;
+  color: #fff;
+  padding: 16px 22px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken(variables.$btnColor, 3%);
+  }
+}
+
