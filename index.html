@@ -21,7 +21,7 @@
             <a href="#about_the_movie">Sobre o filme</a>
           </li>
           <li class="header__content__nav__links__link">
-            <a href="#">Personagens</a>
+            <a href="#characters">Personagens</a>
           </li>
           <li class="header__content__nav__links__link">
             <a class="btn-primary">
@@ -41,17 +41,17 @@
       </p>
       </div>
   </section>
-  <section class="characters">
+  <section id="characters" class="characters">
     <div class="container">
       <nav class="characters__tabs">
         <button class="characters__tabs__button characters__tabs__button--active title" data-tab-button="personagens">
           Personagens
         </button>
-        <button class="characters__tabs__button title">
+        <button class="characters__tabs__button title" data-tab-button="elenco">
           Elenco
         </button>
       </nav>
-      <ul class="characters__list" data-tab-id="personagens">
+      <ul class="characters__list characters__list--is-active" data-tab-id="personagens">
         <li class="characters__list__item">
           <header>
             <h3>Batman</h3>
@@ -61,55 +61,37 @@
             <div class="accordion__header">
               <h3>História</h3>
             </div>
-            <p class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita, consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque unde. Fugiat, labore?
-            </p>
+            <div class="accordion__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita,
+                consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque
+                unde. Fugiat, labore?
+              </p>
+            </div>
           </div>
           <div class="accordion">
             <div class="accordion__header">
               <h3>Habilidades</h3>
             </div>
-            <p class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita, consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque unde. Fugiat, labore?
-            </p>
+            <div class="accordion__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita,
+                consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque
+                unde. Fugiat, labore?
+              </p>
+            </div>
           </div>
           <div class="accordion">
             <div class="accordion__header">
-              <h3>História</h3>
+              <h3>Origem</h3>
             </div>
-            <p class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita, consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque unde. Fugiat, labore?
-            </p>
-          </div>
-        </li>
-        <li class="characters__list__item">
-          <header>
-            <h3>Batman</h3>
-          </header>
-          <img src="./dist/images/batman-foto.jpg" alt="Batman">
-          <div class="accordion accordion">
-            <div class="accordion__header">
-              <h3>História</h3>
+            <div class="accordion__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita,
+                consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque
+                unde. Fugiat, labore?
+              </p>
             </div>
-            <p class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita, consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque unde. Fugiat, labore?
-            </p>
-          </div>
-          <div class="accordion accordion">
-            <div class="accordion__header">
-              <h3>História</h3>
-            </div>
-            <p class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita, consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque unde. Fugiat, labore?
-            </p>
-          </div>
-          <div class="accordion accordion">
-            <div class="accordion__header">
-              <h3>História</h3>
-            </div>
-            <p class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita, consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque unde. Fugiat, labore?
-            </p>
           </div>
         </li>
         <li class="characters__list__item">
@@ -121,31 +103,121 @@
             <div class="accordion__header">
               <h3>História</h3>
             </div>
-            <p class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita, consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque unde. Fugiat, labore?
-            </p>
+            <div class="accordion__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita,
+                consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque
+                unde. Fugiat, labore?
+              </p>
+            </div>
           </div>
           <div class="accordion">
             <div class="accordion__header">
               <h3>Habilidades</h3>
             </div>
-            <p class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita, consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque unde. Fugiat, labore?
-            </p>
+            <div class="accordion__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita,
+                consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque
+                unde. Fugiat, labore?
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__header">
+              <h3>Origem</h3>
+            </div>
+            <div class="accordion__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita,
+                consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque
+                unde. Fugiat, labore?
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="characters__list__item">
+          <header>
+            <h3>Batman</h3>
+          </header>
+          <img src="./dist/images/batman-foto.jpg" alt="Batman">
+          <div class="accordion">
+            <div class="accordion__header">
+              <h3>História</h3>
+            </div>
+            <div class="accordion__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita,
+                consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque
+                unde. Fugiat, labore?
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__header">
+              <h3>Habilidades</h3>
+            </div>
+            <div class="accordion__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita,
+                consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque
+                unde. Fugiat, labore?
+              </p>
+            </div>
           </div>
           <div class="accordion">
             <div class="accordion__header">
               <h3>História</h3>
             </div>
-            <p class="accordion__content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita, consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque unde. Fugiat, labore?
-            </p>
+            <div class="accordion__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis maiores sint quia libero expedita,
+                consequuntur quidem suscipit obcaecati eaque vero exercitationem asperiores magni, consectetur labore atque
+                unde. Fugiat, labore?
+              </p>
+            </div>
           </div>
+        </li>
+      </ul>
+      <ul class="characters__list" data-tab-id="elenco">
+        <li class="characters__list__item">
+          <header>
+            <h3>Robert Pattinson</h3>
+          </header>
+          <img src="./dist/images/robert_pattinson.jpg" alt="Batman">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In distinctio excepturi sapiente! Nobis a ea incidunt excepturi molestiae eos maiores inventore illum laborum doloribus delectus, labore aperiam, neque illo voluptates!
+          </p>
+        </li>
+        <li class="characters__list__item">
+          <header>
+            <h3>Robert Pattinson</h3>
+          </header>
+          <img src="./dist/images/robert_pattinson.jpg" alt="Batman">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In distinctio excepturi sapiente! Nobis a ea incidunt excepturi molestiae eos maiores inventore illum laborum doloribus delectus, labore aperiam, neque illo voluptates!
+          </p>
+        </li>
+        <li class="characters__list__item">
+          <header>
+            <h3>Robert Pattinson</h3>
+          </header>
+          <img src="./dist/images/robert_pattinson.jpg" alt="Batman">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In distinctio excepturi sapiente! Nobis a ea incidunt excepturi molestiae eos maiores inventore illum laborum doloribus delectus, labore aperiam, neque illo voluptates!
+          </p>
         </li>
       </ul>
     </div>
   </section>
+  <footer class="footer">
+    <div class="footer__content container">
+      <p class="text">
+        © 2023 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. 
+      </p>
+    </div>
+  </footer>
 
-  <script src="./dist/js/main.js"></script>
+  <script src="./src/scripts/main.js"></script>
 </body>
 </html>
