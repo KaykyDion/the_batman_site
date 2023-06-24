@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const accordionHeader = document.querySelectorAll(".accordion__header")
+  const accordionHeader = document.querySelectorAll(".accordion__header");
   const navButtons = document.querySelectorAll('[data-tab-button]');
+  const hamburguerMenu = document.querySelector('.hamburguer-menu');
+
+  hamburguerMenu.addEventListener('click', function() {
+    const navLinks = document.querySelector('.header__content__nav__links__mobile')
+    const classOpen = "header__content__nav__links__mobile--open"
+    
+    navLinks.classList.toggle(classOpen)
+  })
 
   for (let i = 0; i < accordionHeader.length; i++) {
     accordionHeader[i].addEventListener('click', openAccordion)

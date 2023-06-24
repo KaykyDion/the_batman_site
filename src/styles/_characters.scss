@@ -8,6 +8,10 @@
     display: flex;
     justify-content: center;
     gap: 20%;
+
+    @media (max-width: 767px) {
+      gap: 7%;
+    }
     
     &__button {
       background: none;
@@ -27,6 +31,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 40px;
+
+    @media (max-width: 1023px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     &--is-active {
       display: grid;
@@ -76,12 +88,13 @@
   }
 
   &__content {
-    padding: 16px;
+    
     background-color: variables.$bgColor;
     border: 2px solid #000;
     border-radius: 0 0 4px 4px;
     border-top: none;
-    display: none;
+    height: 0;
+    overflow: hidden;
   }
 
   &--is-open {
@@ -92,7 +105,8 @@
     }
 
     .accordion__content {
-      display: block;
+      padding: 0 16px;
+      height: auto;
     }
   }
 }
