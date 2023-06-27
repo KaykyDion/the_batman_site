@@ -1,4 +1,4 @@
-@use 'variables';
+@use "variables";
 
 .characters {
   padding: 50px 0;
@@ -12,7 +12,7 @@
     @media (max-width: 767px) {
       gap: 7%;
     }
-    
+
     &__button {
       background: none;
       border: none;
@@ -20,8 +20,8 @@
       border-bottom: 6px solid transparent;
       padding-bottom: 5px;
 
-      &--active{
-        border-color:#F13418;
+      &--active {
+        border-color: #f13418;
       }
     }
   }
@@ -36,22 +36,21 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
     }
 
     &--is-active {
       display: grid;
     }
-    
 
     &__item {
       border: 2px solid #2c3e50;
       border-radius: 4px;
       background-color: #2c3e50;
       color: #ccc;
-      max-height: 100%;
-      
+      height: fit-content;
+
       header {
         padding: 12px;
         font-size: 18px;
@@ -59,7 +58,7 @@
       }
 
       img {
-        max-width: 100%;
+        width: 100%;
       }
 
       p {
@@ -82,13 +81,12 @@
     cursor: pointer;
 
     &::after {
-      content: '+';
+      content: "+";
       font-size: 30px;
     }
   }
 
   &__content {
-    
     background-color: variables.$bgColor;
     border: 2px solid #000;
     border-radius: 0 0 4px 4px;
